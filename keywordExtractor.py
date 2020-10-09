@@ -88,3 +88,8 @@ class CoOccurrenceMatrix:
                 count += 1
         return count
 
+from rake_nltk import Rake
+def parse_keywords_rake_nltk(phrase):
+    r = Rake()
+    r.extract_keywords_from_text(j)
+    return r.get_ranked_phrases()
