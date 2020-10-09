@@ -18,7 +18,7 @@ def parse_keywords(phrase):
     word_scores = m.get_all_word_scores()
     expression_scores = m.get_all_expression_scores()
     #the number of top candidates to choose
-    T = len(candidate_keyphrases) // 3
+    T = len(content_words) // 3
     #combines the word and expression scores sorts them
     scores_sorted = sorted((word_scores + expression_scores), reverse=True)
     #returns the words/expressions with the top T scores
