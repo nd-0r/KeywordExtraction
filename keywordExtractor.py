@@ -1,4 +1,3 @@
-import math
 import re
 
 # move these to a file
@@ -24,7 +23,6 @@ def parse_keywords(phrase):
     scores_sorted = sorted((word_scores + expression_scores), reverse=True)
     #returns the words/expressions with the top T scores
     return scores_sorted[:T]
-
 
 
 class CoOccurrenceMatrix:
